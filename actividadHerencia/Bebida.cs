@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace actividadHerencia
 {
-    internal class Bebida
+    public class Bebida
     {
-        private string nombre;
-        private int cant;
+        public string nombre;
+        public int cant;
 
         public Bebida(string nombre, int cant)
         {

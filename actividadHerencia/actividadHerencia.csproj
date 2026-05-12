@@ -46,6 +46,7 @@
     <Compile Include="AguaSaborizada.cs" />
     <Compile Include="Bebida.cs" />
     <Compile Include="Cerveza.cs" />
+    <Compile Include="IGradoAlcohol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vino.cs" />

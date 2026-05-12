@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace actividadHerencia
 {
-    internal class AguaSaborizada:Bebida
+    public class AguaSaborizada:Bebida
     {
         private int cantVasos;
         private string sabor;
 
-        public AguaSaborizada(int cantVasos, string sabor)
+        public AguaSaborizada(string nombre, int cant, int cantVasos, string sabor) : base (nombre, cant) 
         {
             this.cantVasos = cantVasos;
             this.sabor = sabor;
