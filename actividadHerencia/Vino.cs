@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace actividadHerencia
 {
-    internal class Vino:Bebida
+    internal class Vino:Bebida, IGradoAlcohol
     {
         private int cantCopas;
         private int año;
 
-        public Vino(int cantCopas, int año)
+        public Vino(string nombre, int cantidad, int cantCopas, int año) base : (nombre, cantidad)
         {
             this.cantCopas = cantCopas;
             this.año = año;
@@ -24,5 +24,7 @@ namespace actividadHerencia
 
         public int CantCopas { get => cantCopas; set => cantCopas = value; }
         public int Año { get => año; set => año = value; }
+
+        public static int MostrarLimitePermitidoDeVasos()
     }
 }

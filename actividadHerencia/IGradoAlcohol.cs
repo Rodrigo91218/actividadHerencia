@@ -10,7 +10,7 @@ namespace actividadHerencia
     {
         double PorcentajeAlcohol { get; set; }
 
-        void MostrarLimitePermitido();
+        void MostrarLimitePermitidoDeVasos();
 
         bool EsBebidaAlcoholica();
     }
