@@ -11,6 +11,9 @@ namespace actividadHerencia
         private int cantCopas;
         private int año;
 
+        public int CantCopas { get => cantCopas; set => cantCopas = value; }
+        public int Año { get => año; set => año = value; }
+
         public Vino(string nombre, int cantidad, int cantCopas, int año) base : (nombre, cantidad)
         {
             this.cantCopas = cantCopas;
@@ -22,8 +25,7 @@ namespace actividadHerencia
             this.año = 0;
         }
 
-        public int CantCopas { get => cantCopas; set => cantCopas = value; }
-        public int Año { get => año; set => año = value; }
+       
 
         public static int MostrarLimitePermitidoDeVasos()
     }
